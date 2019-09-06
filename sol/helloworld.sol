@@ -10,7 +10,10 @@ contract helloworld{
     
     function setString(string memory _var1) public{
         var1 = _var1;
+        emit E_setString(var1);  //추가
     }
+    
+    event E_setString(string val1); //추가
     
     function getString() public view returns(string memory){
         return var1;

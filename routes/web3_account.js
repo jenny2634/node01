@@ -36,5 +36,8 @@ w3.eth.getAccounts(function(error, result){
 // });
 
 
+//계정 생성 - rpc 서버에 나타나지 않음
+let{ address, privatekey } = w3.eth.accounts.create();
+
 
 module.exports = router;

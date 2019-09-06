@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>select_member</title>
+    <title>admin_list</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-      <a href="/customer/insert">고객등록</a>
-      <a href="/customer/delete">고객삭제</a>
-      <a href="/customer/update">고객수정</a>
-      <a href="/customer/send">2번한테돈보내기</a>
-      <a href="/customer/admin">관리자페이지</a>
+      관리자 페이지 <hr />
+
   <hr />
       <table border="1">
         <thead>
@@ -27,8 +24,8 @@
                 <td><%= list[i].name %></td>
                 <td><%= list[i].age %></td>
                 <td>
-                  <a href="/customer/delete?id=<%= list[i].id %>">삭제</a>
-                  <a href="/customer/update?id=<%= list[i].id %>">수정</a>
+                  <a href="/customer/info_list?id=<%= list[i].id %>">계약서 보기</a>
+                 
                 </td>
             </tr>
             <% } %>
